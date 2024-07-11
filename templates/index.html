@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Heart Attack Prediction</title>
+</head>
+<body>
+    <h1>
+        Welcome to Heart Attack Prediction Website
+    </h1>
+    <form method="Post">
+        <label>Enter the Person's age:</label>
+        <input type="number" step="any" name="age"><br>
+        <label>Enter the CP value:</label>
+        <input type="number" step="any" name="cp"><br>
+        <label>Enter the Trestbps value:</label>
+        <input type="number" step="any" name="trestbps"><br>
+        <label>Enter the Chol value:</label>
+        <input type="number" step="any" name="chol"><br>
+        <label>Enter the Fbs value:</label>
+        <input type="number" step="any" name="fbs"><br>
+        
+        <button type="submit">Check Age</button>
+        {% if prediction %}
+        <p>{{prediction}}</p>
+        {% endif %}
+
+    </form>
+</body>
+</html>

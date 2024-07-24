@@ -7,11 +7,11 @@
     <title>Heart Attack Prediction</title>
     <link rel="icon" type="image/x-icon" href="/static/favicon/favicon2.ico">
 </head>
-<body background={{ url_for('static' , filename='background/heart6.jpg') }} class="bg-no-repeat bg-cover text-white ">
-<div class="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-center text-2xl font-bold">
+<body background={{ url_for('static' , filename='background/heart6.jpg') }} class="bg-no-repeat bg-cover">
+<div class="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-center text-2xl font-bold text-white">
     Welcome To Heart Attack Prediction Website 
 </div>
-    <div class="flex justify-center text-lg py-2 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] font-semibold">
+    <div class="flex justify-center text-lg py-2 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] font-semibold text-white">
     <form method="Post" class = "grid grid-rows-5 gap-x-3">
         <label>Enter the Person's age:</label>
         <input type="number" step="any" name="age"><br>
@@ -53,6 +53,7 @@
         padding-left: 10px;
         font-size: small;
         font-weight: 600;
+        color: black;
     }
     input:focus-visible{
         outline: 2px solid skyblue;

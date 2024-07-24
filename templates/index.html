@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Heart Attack Prediction</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon/favicon2.ico">
 </head>
-<body>
-    <h1>
-        Welcome to Heart Attack Prediction Website
-    </h1>
-    <form method="Post">
+<body background={{ url_for('static' , filename='background/heart6.jpg') }} class="bg-no-repeat bg-cover">
+<div class="text-center text-2xl font-bold">
+    Welcome To Heart Attack Prediction Website 
+</div>
+    <div class="flex justify-center text-lg font-bold py-2">
+    <form method="Post" class = "grid grid-rows-5 gap-x-3">
         <label>Enter the Person's age:</label>
         <input type="number" step="any" name="age"><br>
         <label>Enter the CP value:</label>
@@ -22,11 +24,40 @@
         <label>Enter the Fbs value:</label>
         <input type="number" step="any" name="fbs"><br>
         
-        <button type="submit">Check Age</button>
-        {% if prediction %}
-        <p>{{prediction}}</p>
-        {% endif %}
+    </div>
+    <div class="flex justify-center text-red-50	">
+        <button type="submit">Check</button>
+    </div>
+        <!-- {% if prediction %}
+        <div class="flex justify-center">
+            <p>{{prediction}}</p>
+        </div>
+        {% endif %} -->
 
     </form>
+<div class="text-center p-4 text-2xl italic font-medium">
+ <a href="/Details">Click Here To Know About The Values</a>
+</div>
+<style>
+    button{
+        background-color: black;
+        border-radius: 10px;
+        font-size: 20px;
+        width: 150px;
+    }
+    input{
+        border-color: black;
+        border-width: 2px;
+        border-radius: 20px;
+        padding-left: 10px;
+        font-size: small;
+        font-weight: 600;
+    }
+    input:focus-visible{
+        outline: 2px solid skyblue;
+        /*border: 1px solid #f913f9;*/
+        border: inherit;
+    }
+</style>
 </body>
 </html>

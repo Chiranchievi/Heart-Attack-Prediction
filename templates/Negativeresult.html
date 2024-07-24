@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Negative-result</title>
+</head>
+<body background={{ url_for('static' , filename='background/healthy heart.jpg') }} class="bg-no-repeat bg-cover">
+
+    <div class="flex justify-center text-2xl font-bold">
+        {% if prediction %}
+        <p>Result: {{prediction}}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+

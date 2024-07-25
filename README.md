@@ -4,6 +4,10 @@
 This project is made for to detect whether a person is having a Heart Attack or not with the help of some particular Features available in the Test Report.
  
 
+## Screenshot
+
+![App Screenshot](https://github.com/Chiranchievi/Heart-Attack-Prediction/blob/main/webpage.png)
+
 
 ## Documentation
 
